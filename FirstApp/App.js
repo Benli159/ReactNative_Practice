@@ -1,18 +1,14 @@
 import React from "react";
 import {StyleSheet,View,Button, Pressable,Text,SafeAreaView} from 'react-native'
 import Navigation from './src/Navigation/Stack'
+//import Navigation from './src/Navigation/Tab'
 import 'react-native-gesture-handler';
 const App = ()=>{
-
-
 return(
 
  
 <Navigation/>
 
-
-
- 
 )  
 }
 {/*

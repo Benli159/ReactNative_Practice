@@ -2,11 +2,12 @@
 import React, { useState } from "react"
 import { View, Text, TextInput, StyleSheet, Button, Alert, ToastAndroid, Modal,Pressable } from 'react-native'
 
-const App = () => {
+const App = ({navigation,route}) => {
+    const {Message} = route.params;
     const [name, SetName] = useState('');
     const [submitted, SetSubmmited] = useState(false);
     const [showMdal,SetModal] = useState(false);
-
+Alert.alert('',Message);
     const onPressButton = ()=>{
             if(name.length>3){
                submitted&&
