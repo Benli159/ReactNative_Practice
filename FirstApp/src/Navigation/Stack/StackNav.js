@@ -6,6 +6,7 @@ const StackNav = () =>{
 const navigation = useNavigation();
 const InputOnPress = ()=>{navigation.navigate('Input_Screen',{Message:'Message Data'});}
 const HookOnPress = ()=>{navigation.navigate('Hook_Screen');}
+const HookEffectOnPress = ()=>{navigation.navigate('HookEffect_Screen');}
 const BaseOnPress = ()=>{navigation.navigate('Base_Screen');}
 const CustomConOnPress = ()=>{navigation.navigate('CustomCom_Screen');}
 const ListOnPress = ()=>{navigation.navigate('List_Screen');}
@@ -19,6 +20,9 @@ return(
     </Pressable>
     <Pressable style={styles.button} onPress={HookOnPress}>
     <Text>Hook State</Text>
+    </Pressable>
+    <Pressable style={styles.button} onPress={HookEffectOnPress}>
+    <Text>Hook Effect</Text>
     </Pressable>
     <Pressable style={styles.button} onPress={BaseOnPress}> 
     <Text>Base</Text>

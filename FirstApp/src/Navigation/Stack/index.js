@@ -11,6 +11,7 @@ import FlatListScreen from '../../Screens/FlatList'
 import StackNav from './StackNav';
 import AsyncHomeSrceen from '../../Screens/AsyncStorage/home.js';
 import AsyncIndexSrceen from '../../Screens/AsyncStorage';
+import HookEffectScreen from '../../Screens/Hook/Effect'
 const Stack = createStackNavigator();
 
 const Navigation =()=>{
@@ -21,6 +22,8 @@ const Navigation =()=>{
             <Stack.Screen name="Home" component={StackNav}></Stack.Screen>
                 <Stack.Screen name="Input_Screen" component={InputScreen}></Stack.Screen>
                 <Stack.Screen name="Hook_Screen" component={HookScreen}></Stack.Screen>
+                <Stack.Screen name="HookEffect_Screen" component={HookEffectScreen}></Stack.Screen>
+              
                 <Stack.Screen 
                 name="Base_Screen" 
                 component={BaseScreen}
